@@ -7,7 +7,7 @@ router.route('/')
     .post(projectController.createProject)
 
 router.route('/:id/tasks')
-    .get()
+    .get(projectController.getAllTasks)
     .post(projectController.createTask)
 
 module.exports = router
